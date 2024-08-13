@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
    <style>
-      .box1{
+      /* .box1{
         width: 100px;
         height: 100px;
         background-color: sandybrown;
         transition: linear .5s ;
         margin: 200px auto;
-        }
-        .box1:hover{
+        } */
+        /* .box1:hover{
             transform: translateX(100px);
-            transform: translateY(100px);
+            transform: translateY(100px); */
             /* transform: translate(100px,200px); */
 
 
@@ -27,18 +27,53 @@
             
             transform: scaleX(.5);  
             transform: scaleY(.5);  
-            transform: scale(.5);   */
+            transform: scale(.5);   
 
 
 
 
 
+        }*/
+
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: sandybrown;
+            transition: linear.5s ;
+            position: relative;
+            transition: linear .5s;
+            overflow: hidden;
+          
+        }
+
+        .box1 img{
+            width: 100%;
+            height: 100%;
+            filter: blur(5px);
+        }
+        .text{
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            transition: linear .5s;
+
+        }
+        .box1:hover .text{
+            left: 0;
         }
    </style>
        
     
 </head>
 <body>
-    <div class="box1"></div>
+    <div class="box1">
+        <img src="https://img.freepik.com/free-photo/woman-pointing-right-smiling_176420-16574.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+   
+
+    <div class="text">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa maxime fugiat quibusdam nemo alias corporis temporibus possimus ipsum, ex architecto itaque obcaecati voluptatem praesentium soluta vero, animi doloribus, placeat asperiores.</p>
+    </div>
+</div>
 </body>
 </html>
