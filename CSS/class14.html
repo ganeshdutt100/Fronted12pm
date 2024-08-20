@@ -35,7 +35,7 @@
             justify-content: space-around;
         }
        .logo{}
-       ul{
+       nav ul{
         list-style: none;
             display: none;
             align-items: center;
@@ -130,7 +130,7 @@
        }
 .sec5{
     width: 400px;
-    margin: auto;
+    margin: 20px auto;
     border: 2px solid lightblue;
     border-radius: 10px;
     padding: 20px;
@@ -149,8 +149,33 @@ input{
     margin-bottom: 10px;
     background-color: lightblue;
 }
+
+
+footer{
+    display: flex;
+   justify-content: space-around;
+    gap: 50px;
+ 
+
+}
+
+.footer{
+    padding: 20px 10px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}
+footer ul{
+    list-style: none;
+}
+
+footer p{
+    width: 200px;
+}
        @media only screen and (min-width: 768px) {
-        ul{
+       nav ul{
             display: flex;
         }
         .bar{
@@ -260,15 +285,16 @@ input{
           <button>Card1</button>
       </div>
     </div>
+    </div>
      <!-- ========== End Section-4 ========== -->
 
 
 
      <!-- ========== Start -5 ========== -->
       
-     <h1 class="sec2Heading">Lorem ipsum dolor sit amet.</h1>
+     <h1 style="margin-top: 50px;" class="sec2Heading">Lorem ipsum dolor sit amet.</h1>
      <div class="empty"></div>
-      <div class="sec5">
+      <div class="sec5" >
 
         <form action="">
             <input type="text" placeholder="Enter Your Name">
@@ -280,5 +306,24 @@ input{
       </div>
      <!-- ========== End -5 ========== -->
      
+<div class="footer">
+     <footer>
+       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis odit suscipit dolore necessitatibus tempore placeat </p>
+
+       <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>contact</li>
+       </ul>
+
+       <form >
+         <input type="text" placeholder="Enter Your Email">
+         <button style="background-color: orange;">Subscribe</button>
+       </form>
+        
+     </footer>
+     <p>&copy; 2023 All rights reserved.</p>
+
+    </div>
 </body>
 </html>
