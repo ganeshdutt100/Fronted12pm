@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+        }
+       .logo{}
+       ul{
+        list-style: none;
+            display: none;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+       }
+
+       .sec1{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+       }
+
+       .sec1 img{
+        width: 300px;
+       }
+       .sec2{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+       }
+
+       .sec2 img{
+        width: 300px;
+       }
+
+
+       button{
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+       }
+
+       .sec2Heading{
+        margin-top: 50px;
+        text-align: center;
+        font-family: sans-serif;
+       }
+
+       .empty{
+        width: 300px;
+        height: 4px;
+        background-color: yellow;
+        margin: auto;
+        border-radius: 50%;
+       }
+
+.sec3{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    gap:20px;
+    flex-wrap: wrap;
+}
+       .sec3Images{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        opacity: .5;
+        transition: .2s all linear;
+
+       }
+       .sec3Images:hover{
+        opacity: 1;
+       }
+
+       .sec4{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+        
+       }
+       .card{
+        width: 300px;
+        height: auto;
+        background-color: lightblue;
+        padding: 10px;
+        border-radius: 10px;
+       }
+       .card img{
+        width: 100%;
+        height: auto;
+       }
+
+       @media only screen and (min-width: 768px) {
+        ul{
+            display: flex;
+        }
+        .bar{
+            display: none;
+        }
+
+        .sec1{
+            gap: 20px;
+            flex-direction: row;
+        }
+        .sec2{
+            gap: 20px;
+            flex-direction: row;
+        }
+        
+       }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Logo</div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Project</li>
+        </ul>
+
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <!-- ========== Start Section-1 ========== -->
+    
+
+    <div class="sec1">
+        <img src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+        <div class="sec1Text">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus consequatur voluptas modi quidem consectetur omnis quos deleniti porro, sequi illo voluptatibus! Quia commodi qui sapiente maxime consequuntur consectetur odio.</p>
+            <button>Click me </button>
+        </div>
+    </div>
+    <!-- ========== End Section-1 ========== -->
+    
+
+
+    <!-- ========== Start Section-2 ========== -->
+
+    <h1 class="sec2Heading">Lorem ipsum dolor sit amet.</h1>
+    <div class="empty"></div>
+    <div class="sec2">
+      
+        <div class="sec2Text">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus consequatur voluptas modi quidem consectetur omnis quos deleniti porro, sequi illo voluptatibus! Quia commodi qui sapiente maxime consequuntur consectetur odio.</p>
+            <button>Click me </button>
+        </div>
+
+
+        <img src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+    </div>
+    <!-- ========== End Section-2 ========== -->
+
+
+
+    <h1 class="sec2Heading">Lorem ipsum dolor sit amet.</h1>
+    <div class="empty"></div>
+
+    <div class="sec3">
+        <img class="sec3Images" src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+        <img class="sec3Images" src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+        <img class="sec3Images" src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+    </div>
+
+
+    <!-- ========== Start Section-4 ========== -->
+    
+    <h1 class="sec2Heading">Lorem ipsum dolor sit amet.</h1>
+    <div class="empty"></div>
+   
+    
+    <div class="sec4">
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+        <div class="cardText">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus consequatur voluptas modi quidem consectetur omnis quos deleniti porro, sequi illo voluptatibus! Quia commodi qui sapiente maxime consequuntur consectetur odio.</p>
+          <button>Card1</button>
+      </div>
+    </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+        <div class="cardText">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus consequatur voluptas modi quidem consectetur omnis quos deleniti porro, sequi illo voluptatibus! Quia commodi qui sapiente maxime consequuntur consectetur odio.</p>
+          <button>Card1</button>
+      </div>
+    </div>
+      <div class="card">
+        <img src="https://img.freepik.com/free-photo/smiling-young-woman-holding-retro-camera_329181-142.jpg?ga=GA1.1.1515099720.1720260128&semt=ais_hybrid" alt="">
+        <div class="cardText">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam necessitatibus consequatur voluptas modi quidem consectetur omnis quos deleniti porro, sequi illo voluptatibus! Quia commodi qui sapiente maxime consequuntur consectetur odio.</p>
+          <button>Card1</button>
+      </div>
+    </div>
+     <!-- ========== End Section-4 ========== -->
+</body>
+</html>
