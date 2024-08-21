@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document 34</title>
+            <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+    p{
+       color: navy;
+       font-weight: bold;
+    }
+
+
+    nav{
+        cursor:default;
+        margin-left: -300px;
+        display: flex;
+        justify-content: space-around;
+        background-color: darkred;
+        color: white;
+        padding: 20px;
+
+    }
+    .logo{}
+       nav ul{
+        list-style: none;
+            display: none;
+            align-items: center;
+            justify-content: space-around;
+            gap: 20px;
+       }
+
+
+
+    .sec1{
+        background-image: url("https://th.bing.com/th/id/OIF.vBToXm4oln7PSvrf0MNukg?w=324&h=182&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        
+        width: 100%;
+            height:700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        border: 2px solid purple;
+        align-items: center;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+    .textSec1{
+        font-size: 25px;
+        margin-top: 200px;
+        margin-left: 1000px;
+        width: 500px;
+        color: darkred;
+        flex-wrap: nowrap;
+    }
+    .sec1 img{
+        
+        width: 300px;
+        height: 300px;
+    }
+
+
+
+    
+    .sec2{
+        border: 3px solid darkred;
+        height: 500px;
+            margin-top: 200px;
+            display: flex;
+            
+            ;
+            gap: 10px;
+            color: darkred;
+
+        }
+        .text2{
+            color: darkred;
+            margin-top: 100px;
+
+
+            margin-left: 300px;
+            width: 300px;
+            
+        }
+        .sec2 img{
+            margin-left: 100px;
+            margin-top: 50px;
+            width: 500px;
+            height: 400px;
+        } 
+        .sec3{
+            border: 3px solid darkred;
+            height: 350px;
+            margin-top: 150px;
+            display: flex;
+            
+            ;
+            gap: 10px;}
+
+        
+        .text3{
+            color: darkred;
+            margin-top: 50px;
+
+
+            margin-left: -1100px;
+            width: 500px;
+            
+        }
+        .sec3 img{
+            margin-left: 800px;
+            width: 500px;
+        } 
+        .box{
+                    
+                    width: 1500px;
+                    height: 300px;
+                    display: flex;
+    
+                    gap: 20px;
+                    margin-top: 50px;
+                    border-radius: 0px;
+                    margin-bottom: 300px;
+                    
+                    background-color:lightgrey;}
+
+
+       
+       .text4{
+        color: darkred;
+
+                  margin-top: 100px;
+                  width: 800px;
+                  margin-left: 400px;
+                  
+       }
+       .sec5 img{
+                margin-top: 500px;
+                width: 300px;
+                height: 100%;
+                margin-left: -900px;
+
+       }
+       .text5{
+        color: darkred;
+        
+        
+        margin-top: 350px;
+        margin-bottom: 400px;
+        align-items: center;
+
+            
+            margin-left: -1050px;
+            width: 800px;
+            height: 400px;
+       }
+       .text5 img{
+                margin-top: 30px;
+                margin-left: 1100px;
+       }
+
+       .background{
+        background-image: url("https://th.bing.com/th/id/OIP.88yz61tcMFLMZwqmyERFKQAAAA?w=284&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+        width: 100%;
+        height: 800px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: 400px;
+
+       }
+       .text10{
+        margin-top: -150px;
+        margin-left: 600px;
+        height: 400px;
+        font-size: 50px;
+        
+        
+       }
+       .text11{
+         margin-left: 400px;
+         margin-top: -100px;
+       }
+       
+       button{
+        cursor: pointer;
+       }
+       footer{
+           /* margin-top: 100px;*/
+           
+
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            
+            color: white;
+            margin: 50px auto ;
+            text-align: center;
+            flex-direction: column;
+            padding: 40px;
+            margin-bottom: -100px;
+            
+           
+            
+            
+            
+        }
+        @media only screen and (min-width: 700px){
+    
+        nav ul{
+            display: flex;
+        }
+    .bar{
+        display: none;
+    }
+    .sec1{
+            gap: 20px;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: nowrap;
+        }
+        .sec2{
+            gap: 20px;
+            flex-direction: row;
+        }
+    
+
+    }
+
+
+
+   
+</style>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="https://th.bing.com/th?id=OIP.5lf5uP-Qj2NTacVFGL9BdgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="" width="50px" height="40px">
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Services</li>
+            <li>Project</li>
+        </ul>
+        <div class="bar">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+
+    <div class="sec1">
+        
+       <div class="textSec1">
+        <h1>HAPPY RAKSHA BANDHAN
+        </h1>
+        <p>
+
+
+
+        </p>
+        
+       </div>
+    </div>
+
+
+    </div>
+    <div class="sec2 img">
+            
+    
+            
+            
+        <img src="https://th.bing.com/th/id/OIP.NDHRwZQEVkj_BWGfBdw2TAHaD4?w=329&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"alt="">
+        <div class="text2">
+            
+                <h1 style="color: darkred";>HISTORY OF RAKSHA BANDHAN</h1><br>
+                <p style="color: darkorange;">The history of Raksha Bandhan is steeped in mythological tales and historical anecdotes that underscore the bond of protection and care between siblings. One of the most revered stories is that of Lord Krishna and Draupadi.
+                    In the epic Mahabharata, Draupadi tore a strip of her sari and tied it around Krishna's wrist to staunch a bleeding wound. Touched by her gesture, Krishna promised to protect her always.
+
+
+
+                </p>
+                    
+                <button>read more </button>
+            </div>
+        </div> 
+        <div class="sec3 img">
+        
+
+        
+        
+            <img src="https://th.bing.com/th?id=OIF.3tntIuqJfktMx4H3JQh7%2fA&w=328&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7"alt="">
+            <div class="text3">
+                
+                    <h1>CELEBERATIONS
+                    </h1><br>
+                    <p style="color: darkorange;"> Raksha Bandhan, sisters prepare meticulously by choosing rakhis that range from traditional threads to intricately designed ones, often embellished with beads, motifs, and symbols of protection.
+
+                        The ceremony begins with prayers and aarti, followed by the sister tying the rakhi around her brother's wrist, symbolising her love and his commitment to protect her.
+                        
+                        Brothers, in turn, offer gifts and promise to safeguard their sisters' well-being throughout their lives. This exchange is often accompanied by familial gatherings, feasting on sweets like laddoos and barfis, and sharing joyous moments.
+                    </p></p>
+                    <button>KNOW MORE </button>
+                </div>
+            </div> 
+        </div>
+        <div class="box">
+            
+    
+            
+            
+            
+            <div class="text4">
+                <h1>"Brothers and sisters are as close as hands and feet"
+                </h1>
+                
+               
+
+
+
+                
+
+                </div>
+
+                <div class="text5">
+
+                
+
+                    <h1>Modern variations</h1><br>
+                    <p style="color: darkorange;"> modern practice, especially in urban areas, the festival’s theme of protection has expanded beyond the brother-sister bond to a ritual marking mutual protection within the wider community, including family, friends, and politicians. Not unlike a friendship bracelet, the rakhi is a way of marking bonds both in and beyond the familial unit. For example, in some Indian high schools, girls sometimes designate a quasi-brother, on whom she has tied a rakhi, who protects her from other boys, though the relationship can be platonic or romantic. Preschool children, too, hold rakhi ceremonies as a form of classroom bonding in some schools.
+
+                        In an early instance of the advocating a broader social meaning for Raksha Bandhan, the celebrated Indian poet and writer Rabindranath Tagore reimagined the holiday as a celebration of Hindu-Muslim unity. In 1905 the British raj ordered the partition of Bengal, which divided Bengal between Hindu-dominant West Bengal and Muslim-dominant East Bengal (eventually Bangladesh). In protest and in a sign of religious solidarity, Tagore encouraged Hindus and Muslims in Bengal to tie rakhis on each other.
+                        
+                        
+                        
+                        </p>
+
+                        
+                </div>
+                <div class="text5 img">
+        
+                    <img src="https://th.bing.com/th/id/OIF.8KxB80aw9RsJaPiLv5NEow?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                </div>
+                
+                            </div>
+                    <div class="background">
+                        </div>
+
+                            
+
+                        <div class="text10">
+                            <h style="color: darkred;">
+                                "the biggest gift for a sister is the presence of her brother on rakshabandhan"
+                            </h>
+                            
+                        </div>
+                        </div>
+                    <div class="text11">
+                        <h1 style="color: darkred;" >CREATE BEAUTIFUL CARDS FOR OUR BROTHER THIS RAKSHABANDHAN</h1>
+                            <p>LETS PROCEED
+
+                            </p>
+                            
+                            <button>PROCEED</button>
+                    </div>
+
+                    <footer>
+                        <p style="color: plum;" >FOLLOW US</p>
+                    <div>
+                         <a href="https://github.com/ganeshdutt100">
+                <i class="fa-brands fa-facebook" style="color: blue; font-size:30px ; cursor: pointer;"></i>
+               </a>
+                <i class="fa-brands fa-instagram" style="color: rgb(213, 37, 66); font-size:30px ; cursor: pointer;"></i> 
+            
+                    </a>
+                    </div>
+                    </footer>
+    
+                    
+                    
+
+
+    
+</body>
+</html>
