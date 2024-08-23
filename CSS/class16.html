@@ -4,25 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <!-- FontAwesome 6.2.0 CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+    
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+        integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    ></script>
+    
     <style>
     .box{
         width: 100px;
         height: 100px;
         background-color: red;
         transition: all 3s linear;
-        
+        animation: circle 1s linear infinite;
+        margin: 100px auto;
+
 
     }
-    .box:hover{
+    @keyframes circle{
+        /* 0%{transform: rotate(0deg);}
+        100%{transform: rotate(360deg);} */
+        0%{
+            transform: scale(1);
+        }
+        40%{
+            transform: scale(1.5);
+        }
+        70%{
+            transform: scale(1);
+        }
+        70%{
+            transform: scale(2);
+        }
+    }
+
+
+    .heart{
+        width: 100px;
+        height: 100px;
+        color: red;
+        transition: all 3s linear;
+        animation: circle 1s linear infinite;
+        margin: 100px 300px;
+    }
+    /* .box:hover{
         background-color: blue;
         cursor: pointer;
         width: 400px;
-    }
+    } */
     </style>
 </head>
 <body>
     <div class="box">
-
     </div>
+
+    <i  class="fa-solid fa-heart heart"></i>
+
 </body>
 </html>
