@@ -11,17 +11,25 @@
     </style>
 </head>
 <body>
-    <p id="demo">Loading...</p>
+    <p  id="demo2">Loading...</p>
 
-    <button onclick="fun()">Click me</button>
+    <button>Click me</button>
      <script>
-        function fun(){
-     let value =  document.getElementById('demo');
+    
+    let btn = document.querySelector('button')
+
+    btn.addEventListener('click', function(){
+        let value =  document.querySelector('p');
+    //  let value =  document.getElementById('demo');
 
      value.innerText = "Hello world!";
 
      value.classList.add('demo')
-        }
+        
+    
+    })
+
+        // function fun(){}
     
    
      </script>
