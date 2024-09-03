@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .demo{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">Loading...</p>
+
+    <button onclick="fun()">Click me</button>
+     <script>
+        function fun(){
+     let value =  document.getElementById('demo');
+
+     value.innerText = "Hello world!";
+
+     value.classList.add('demo')
+        }
+    
+   
+     </script>
+</body>
+</html>
