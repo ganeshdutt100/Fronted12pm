@@ -4,10 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        /* #list{
+          display: flex;
+          justify-content: space-around;  
+        } */
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: lightblue;
+            margin: auto;
+            text-align: center;
+            padding-top: 10px;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        button{
+            padding: 10px 20px;
+            border-radius: 10px;
+            border: none;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+        }
+        .list-group-item{
+      display: flex;
+      justify-content: space-around;
+      gap: 10px;
+      background-color: rgba(255, 255, 255, 0.18);
+      border-radius:10px;
+      padding: 10px;
+      cursor: pointer;
+      font-family: sans-serif;
+      font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <div class="container"></div>
-    <script>
+    <!-- <script>
  
  let Value  = document.querySelector('.container')
 
@@ -21,6 +59,41 @@
 
     Value.appendChild(list)
     Value.appendChild(Image)
+    </script> -->
+
+
+    <div class="container">
+
+    <input type="text" id="Input"> 
+    <button class="btn">Add</button>
+    <ul id="list"></ul>
+</div>
+    <script>
+        
+     const input =  document.getElementById('Input');
+     const list =  document.getElementById('list');
+     
+     let addButton =  document.querySelector('.btn');
+
+addButton.addEventListener('click',function(){
+    let li  = document.createElement('li');
+    
+    li.innerText = input.value;
+    // li.style.display="flex"
+
+    li.classList.add('list-group-item');
+
+    let delButton  = document.createElement('button');
+    delButton.innerText ="Delete"
+
+    list.appendChild(li);
+    li.appendChild(delButton);
+
+    input.value="";
+
+})
+
+     
     </script>
 </body>
 </html>
