@@ -6,19 +6,49 @@
     <title>Document</title>
 </head>
 <body>
-    <button>Rock</button>
-    <button>Paper</button>
-    <button id="Scissor" onclick="fun()">Scissor</button>
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissor" >Scissor</button>
+    <p id="result">Loading....</p>
     <script>
-        function fun(){
+        function fun(playerChoice){
             let gameArr = ['rock','paper','scissor']
 
-            let computer =  gameArr[Math.floor(Math.random()*3)]
-            console.log(computer)
+            let computerChoice =  gameArr[Math.floor(Math.random()*3)]
+            // console.log(computer)
+            let result = '';
 
-            
+            if(playerChoice === computerChoice){
+                result ="It's a tie!"
+            }
+
+            else if (
+                (playerChoice === 'rock' && computerChoice === 'scissor' )||
+                (playerChoice === 'paper' && computerChoice === 'rock' )||
+                (playerChoice === 'scissor' && computerChoice === 'paper' )
+             
+            ){
+             result = "You Win!"
+
+        }
+        else{
+             result = "Computer Win!"
         }
 
+         document.getElementById('result').innerText = `Computer Chose : ${computerChoice} , and User Chose ${playerChoice},  ${result}`;
+        
+    }
+
+       document.getElementById('rock').addEventListener('click',function(){
+        fun('rock')
+       })
+       document.getElementById('paper').addEventListener('click',function(){
+        fun('paper')
+       })
+       document.getElementById('scissor').addEventListener('click',function(){
+        fun('scissor')
+       })
+      
 
 
         //Random method 
