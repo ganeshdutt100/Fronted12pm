@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Rock</button>
+    <button>Paper</button>
+    <button id="Scissor" onclick="fun()">Scissor</button>
+    <script>
+        function fun(){
+            let gameArr = ['rock','paper','scissor']
+
+            let computer =  gameArr[Math.floor(Math.random()*3)]
+            console.log(computer)
+
+            
+        }
+
+
+
+        //Random method 
+// document.querySelector('#Scissor').addEventListener('click',function(){
+//     let random = Math.floor(Math.random()*3)
+
+// console.log(random);
+// })
+        
+    </script>
+</body>
+</html>
