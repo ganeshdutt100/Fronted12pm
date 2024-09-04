@@ -83,9 +83,14 @@ addButton.addEventListener('click',function(){
     // li.style.display="flex"
 
     li.classList.add('list-group-item');
-
+   
     let delButton  = document.createElement('button');
     delButton.innerText ="Delete"
+
+    delButton.addEventListener('click', function(){
+        // li.remove();
+        list.removeChild(li);
+    })
 
     list.appendChild(li);
     li.appendChild(delButton);
