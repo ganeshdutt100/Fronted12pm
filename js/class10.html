@@ -10,17 +10,57 @@
     <p id="result">loading..</p>
     <script>
 
+ let output =  document.getElementById('result');
+
       document.getElementById('btn').addEventListener('click',function(){
         // alert("Hello World!");
-        let a = confirm("Hello World!");
-       if(a){
-        document.getElementById('result').textContent = "user Clicked OK";
-       }
-       else{
-        document.getElementById('result').textContent = "user Clicked Cancel";
-       }
+
+        // confirm
+    //     let a = confirm("Hello World!");
+    //    if(a){
+    //     document.getElementById('result').textContent = "user Clicked OK";
+    //    }
+    //    else{
+    //     document.getElementById('result').textContent = "user Clicked Cancel";
+    //    }
+
+
+    // Prompt
+    //   let value1 = Number(prompt("Enter your first Number"))
+    //   let value2 =Number( prompt("Enter your Second Number"))
+
+    //   let resultValue  = value1+value2;
+    // setTimeout(function(){
+    //     output.innerText = resultValue;
+
+    // }, 2000);
+
+
+
+
+    // setTimeout
+    // setTimeout(function(){
+    //     output.innerText = "Success";
+
+    // }, 2000);
+
+
+    let TimeValue;
+    
+  
+
+    setInterval(function(){
+        TimeValue = new Date();
+      let newValue  = TimeValue.toLocaleTimeString();
+        output.innerText = newValue;
+    },1000)
+
       })
      
+
+
+
+
         
     </script>
 </body>
