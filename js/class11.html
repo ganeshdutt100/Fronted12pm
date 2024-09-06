@@ -7,30 +7,71 @@
 </head>
 <body>
     <script>
-     let myPromise =   new Promise(function(resolve, reject) {
+    //  let myPromise =   new Promise(function(resolve, reject) {
   
-        let a = 40;
-        if(a == 5){
-            resolve("Data is matched");
+    //     let a = 40;
+    //     if(a == 5){
+    //         resolve("Data is matched");
             
-        }
-        else{
-            reject("Data is not matched");
+    //     }
+    //     else{
+    //         reject("Data is not matched");
             
-        }
+    //     }
 
-        })
+    //     })
 
 
-        myPromise.then(
-            function(value){
-           document.writeln(value);           
-        }
-     ).catch(
-        function(error){
-            document.writeln(error);
-        }
-     );
+    //     myPromise.then(
+    //         function(value){
+    //        document.writeln(value);           
+    //     }
+    //  ).catch(
+    //     function(error){
+    //         document.writeln(error);
+    //     }
+    //  );
+
+
+    // let promise  = new Promise(function(resolve,reject){
+    //   setTimeout(function(){
+    //     let randomNumber = Math.floor(Math.random()*10)
+    //     if(randomNumber >= 5){
+    //         resolve("Success"  +  randomNumber);
+    //     }
+    //     else{
+    //         reject("Failure"  +  randomNumber);
+    //     }
+    //   },2000);
+    // })
+
+
+
+    let promise  = new Promise(function(resolve,reject){
+      setTimeout(function(){
+        resolve(2);
+        
+    },2000)
+})
+
+
+    promise.then(
+      function(value){
+        document.writeln(value);
+        return new Promise(function(resolve,reject){
+             setTimeout(function(){
+                 resolve(3)
+             },1000)
+           }).then(
+             function(value){
+                 document.writeln(value);
+             }
+             )
+           
+      
+           
+        
+      })
     </script>
 </body>
 </html>
