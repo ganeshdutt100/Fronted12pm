@@ -73,25 +73,73 @@
 
 
     
-    let promise = Promise.race([
-        new Promise(function(resolve){
-            setTimeout(function(){
-                resolve(2);
-            }, 2000);
-        }),
-        new Promise(function(resolve){
-            setTimeout(function(){
-                resolve(3);
-            }, 4000);
-        }),
-        new Promise(function(resolve){
-            setTimeout(function(){
-                resolve(4);
-            }, 3000);
-        })
-    ])
+    // let promise = Promise.race([
+    //     new Promise(function(resolve){
+    //         setTimeout(function(){
+    //             resolve(2);
+    //         }, 2000);
+    //     }),
+    //     new Promise(function(resolve){
+    //         setTimeout(function(){
+    //             resolve(3);
+    //         }, 4000);
+    //     }),
+    //     new Promise(function(resolve){
+    //         setTimeout(function(){
+    //             resolve(4);
+    //         }, 3000);
+    //     })
+    // ])
 
-    promise.then(alert)
+    // promise.then(alert)
+
+
+
+
+    let promise  = Promise.any([ 
+
+    new Promise(reject => setTimeout(reject("new Error, it's an Error") , 2000)), 
+                   new Promise(resolve => setTimeout(resolve(1) , 3000)), 
+                  
+                   new Promise(resolve => setTimeout(resolve(3) , 1000)) 
+    ]) 
+
+
+ 
+    promise.then( 
+      alert 
+    ) 
+ 
+
+
+
+
+    
+    // let promise = Promise.race([
+    //     new Promise(function(resolve){
+    //         setTimeout(function(){
+    //             resolve(2);
+    //         }, 2000);
+    //     }),
+    //     new Promise(function(resolve){
+    //         setTimeout(function(){
+    //             resolve(3);
+    //         }, 4000);
+    //     }),
+    //     new Promise(function(resolve){
+    //         setTimeout(function(){
+    //             resolve(4);
+    //         }, 3000);
+    //     })
+    // ])
+
+    // promise.then(alert)
+
+
+
+
+
+
    
     </script>
 
