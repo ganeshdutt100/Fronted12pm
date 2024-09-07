@@ -38,6 +38,7 @@
         <input type="Phone" placeholder="3884928398298" id="userPhonneNumber">
         <input type="email" placeholder="xyz@gmail.com" id="userMail">
         <input type="password" placeholder="........" id="userPass">
+        <input type="password" placeholder="ConfirmPassword" id="confirmPass">
         <input type="submit" onclick="return formValidation()" placeholder="........">
     </form>
 
@@ -49,6 +50,7 @@
             let userID =  document.getElementById('userID').value;
         let userMail =  document.getElementById('userMail').value;
         let userPass =  document.getElementById('userPass').value;
+        let confirmPass =  document.getElementById('confirmPass').value;
 
              if(userID.trim() ==''){
               alert("User ID is required");
@@ -58,6 +60,10 @@
                 alert("Passwords must be at least 8 characters");
              return false;
 
+             }
+             else if(userPass != confirmPass){
+                 alert("Passwords do not match");
+                 return false;
              }
              return true;
          }
