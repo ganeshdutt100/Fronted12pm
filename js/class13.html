@@ -7,9 +7,20 @@
 </head>
 <body>
      <script>
-        fetch("readme.txt").then(function(a){
-       return a.text()
-        }).then((data)=> console.log(data) )
+    //     fetch("readme.txt").then(function(a){
+    //    return a.text()
+    //     }).then((data)=> console.log(data) )
+
+
+    fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(data => {
+         for(let a in data){
+            console.log(data[a]);
+            
+         }
+    })
+    .catch(err => console.error(err))
      </script>
 </body>
 </html>
