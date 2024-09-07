@@ -42,11 +42,14 @@
     </form>
 
     <script>
-        let userID =  document.getElementById('userID').value;
-        let userMail =  document.getElementById('userMail').value;
-        let userPass =  document.getElementById('userPass').value;
+    
         
          function formValidation(){
+
+            let userID =  document.getElementById('userID').value;
+        let userMail =  document.getElementById('userMail').value;
+        let userPass =  document.getElementById('userPass').value;
+
              if(userID.trim() ==''){
               alert("User ID is required");
               return false;
