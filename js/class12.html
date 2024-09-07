@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   width: 200px;
+  
+   margin: auto;
+   /* border: 1px solid black; */
+   padding: 20px;
+   border-radius: 10px;
+   background-color: lightblue;
+        }
+        input[type="text"], input[type="phone"], input[type="email"], input[type="password"]{
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        input[type="submit"]{
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: darkblue;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Ashlin" id="userID">
+        <input type="Phone" placeholder="3884928398298" id="userPhonneNumber">
+        <input type="email" placeholder="xyz@gmail.com" id="userMail">
+        <input type="password" placeholder="........" id="userPass">
+        <input type="submit" onclick="return formValidation()" placeholder="........">
+    </form>
+
+    <script>
+        let userID =  document.getElementById('userID').value;
+        let userMail =  document.getElementById('userMail').value;
+        let userPass =  document.getElementById('userPass').value;
+        
+         function formValidation(){
+             if(userID.trim() ==''){
+              alert("User ID is required");
+              return false;
+             }
+             else if(userPass.length < 8){
+                alert("Passwords must be at least 8 characters");
+             return false;
+
+             }
+             return true;
+         }
+    </script>
+</body>
+</html>
